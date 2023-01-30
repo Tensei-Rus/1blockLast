@@ -27,13 +27,13 @@ switch (fromUser)
 }
 
 
-int lenNewArray = 0;
+int NewArray = 0;
 for (int i = 0; i <= array.Length - 1; i++)
 {
-    if (array[i].Length <= 3) lenNewArray++;
+    if (array[i].Length <= 3) NewArray++;
 }
 
-string[] newArray = new string[lenNewArray];
+string[] newArray = new string[NewArray];
 int idx = 0;
 
 for (int i = 0; i <= array.Length - 1; i++)
@@ -46,7 +46,7 @@ for (int i = 0; i <= array.Length - 1; i++)
 }
 
 PrintArray(array);
-Console.Write("→ ");
+Console.Write(" → ");
 PrintArray(newArray);
 
 void Commands()
